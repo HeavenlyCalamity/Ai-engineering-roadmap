@@ -1,146 +1,187 @@
-🚀 The Ultimate Free AI Engineering with Java Roadmap (2026–2027 Edition)
-> \\\*\\\*13 Modules | 10 Production Projects | 100% Free Curated Video Curriculum\\\*\\\*
->
-> \\\*\\\*Target Goal:\\\*\\\* Application-Ready by \\\*\\\*Mid-January 2027\\\*\\\* $\\\\rightarrow$ Land an AI Engineer / Java Backend Offer by \\\*\\\*May 2027\\\*\\\*
-> \\\*\\\*Core Stack:\\\*\\\* `Java 21+` • `Spring Boot 4 / 3.x` • `Spring AI` • `LangChain4j` • `LangGraph4j` • `MCP` • `PGVector \\\& Qdrant` • `OpenTelemetry`
+<div align="center">
+
+# 🚀 AI Engineering with Java: The Complete 13-Section, 10-Project Master Roadmap
+
+[![Java](https://img.shields.io/badge/Java-21%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.4_%2F_4.0-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Spring AI](https://img.shields.io/badge/Spring_AI-Latest-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://docs.spring.io/spring-ai/reference/)
+[![LangChain4j](https://img.shields.io/badge/LangChain4j-Agents_%26_RAG-1C3C3C?style=for-the-badge)](https://docs.langchain4j.dev/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Target](https://img.shields.io/badge/Target-Job_Ready_in_10_Weeks-FF4B4B?style=for-the-badge)](#)
+
+**A 100% Free, Project-Driven Curriculum to Master GenAI, Enterprise RAG, Agentic Workflows, MCP, Guardrails, and Production LLMOps in Java.**
+
+[🗺️ Visual Architecture](#-system-architecture--learning-flow) • [⚡ Anti-Boredom Protocol](#-the-anti-boredom-daily-3-hour-protocol) • [📚 13-Section Syllabus & Free Links](#-the-13-section--10-project-master-syllabus-with-free-links) • [🗓️ 10-Week Sprint](#-10-week-fast-track-sprint-schedule) • [📄 Resume Templates](#-ats-ready-resume-bullet-templates)
+
+</div>
+
 ---
-⚡ 1. The Anti-Boredom "Build-First" Protocol
-Watching 15-hour playlists passively causes tutorial fatigue. Instead, use the Reverse-Engineering Loop for every 3-hour daily session:
-$$\text{Daily Sprint (180 mins)} = \underbrace{20\text{m Spec Check}}{\text{Read Project Goal}} + \underbrace{40\text{m Targeted Video}}{\text{Watch at } 1.5\times\text{–}2\times} + \underbrace{90\text{m IDE Building}}{\text{No Video Open}} + \underbrace{30\text{m Core Java/SQL}}{\text{Interview Prep}}$$
-Never Watch Linearly: Read the Project Deliverable for the section first. Open IntelliJ IDEA and start wiring the Spring Boot project.
-Scrub for Answers: Only open the linked YouTube tutorial when you need to see the exact annotation (`@Tool`, `ChatClient`, `BeanOutputConverter`, `McpServer`) or configuration.
-Wire It to Your Own Use Case: Instead of copying generic demo prompts, connect your endpoints to a Telegram Bot, a Gaming/Esports Stat Analyzer, or an Automated IT Helpdesk.
+
+> [!IMPORTANT]
+> **The Core Philosophy:** Learning basic LLM API calls or building a rudimentary "Chat with PDF" wrapper will no longer get you hired. Treat AI Engineering as an extension of core Backend Engineering (`Java 21 + Spring Boot + Spring AI + LangChain4j`). This qualifies you for **two job markets simultaneously**: **Java Backend Engineer** and **AI / GenAI Engineer**.
+
 ---
-🗺️ 2. Master Overview: 13 Sections & 10 Capstone Projects
-Phase	Sec	Module Title	Primary Instructor(s)	Built-In Capstone Project	Status
-Phase 1: Core & Raw LLM	01	Java 21 & Spring Boot 4 Readiness	Dan Vega, Java Guides	Mini REST API with Paging & Records	✅ Done
-	02	AI & LLM Fundamentals	Durgesh, Josh Long	Architecture & Token Math Notes	✅ Done
-	03	LLM with Pure Java (Zero Framework)	Telusko, MFA Creatives	Project 1: Pure Java Terminal Study Bot	⏳ Next
-	04	Prompt Engineering & Output Contracts	Dan Vega, Durgesh	Type-Safe Java `record` Converters	⏳
-Phase 2: Spring AI & RAG	05	Spring AI Deep Dive & Chat Memory	Durgesh, Dan Vega	Project 2: AI Learning Assistant (Full-Stack)	⏳
-	06	Embeddings, Vector DBs & Enterprise RAG	Christian Tzolov, Durgesh	Project 3: E-Commerce Semantic Search<br>Project 4: "Saathi" Company Policy Bot	⏳
-Phase 3: Agents & MCP	07	Tool Calling & Safe DB Actions	Dan Vega, Durgesh	Project 5: Automated Customer Support Agent	⏳
-	08	Complete MCP (Model Context Protocol)	Dan Vega, Josh Long	Project 6: AI Travel Planner MCP Server	⏳
-	09	Master AI Using LangChain4j & Qdrant	Durgesh, Kousen	Project 7: AI Meal & Pantry Assistant	⏳
-	10	Autonomous Single & Multi-Agent Workflows	Durgesh, Josh Long	Project 8: Autonomous AI Research Agent	⏳
-Phase 4: LLMOps & Scale	11	Observability, Tracing & Metrics	Dan Vega, Chetan	Project 9: AI Telemetry Suite (Zipkin/OTel)	⏳
-	12	AI Guardrails, Evals & Security	Dan Vega, Krish Naik	Input/Output Guardrails & RAGAS Suite	⏳
-	13	Production Resilience, Caching & Cloud	Dan Vega, Durgesh	Project 10: Cloud Production Deployment	⏳
+
+## 🗺️ System Architecture & Learning Flow
+
+GitHub natively renders the Mermaid diagram below to visualize how all 13 sections and 10 projects connect:
+
+```mermaid
+graph LR
+    subgraph Phase 1: Foundations & Core AI
+        S1[Sec 1: Java 21 & Spring Boot 4] --> S2[Sec 2: LLM Internals]
+        S2 --> S3[Sec 3: Pure Java HttpClient<br/>🛠️ Project 1: Study Bot]
+        S3 --> S4[Sec 4: Prompts & Contracts]
+        S4 --> S5[Sec 5: Spring AI & Memory<br/>🛠️ Project 2: Learning Assistant]
+    end
+
+    subgraph Phase 2: RAG, Tools, MCP & Agents
+        S5 --> S6[Sec 6: Enterprise RAG & PGVector<br/>🛠️ Projects 3 & 4: Search & KYC Bot]
+        S6 --> S7[Sec 7: Safe Tool Calling<br/>🛠️ Project 5: Support Agent]
+        S7 --> S8[Sec 8: MCP + OAuth2 Security<br/>🛠️ Project 6: AI Travel Planner]
+        S8 --> S9[Sec 9: LangChain4j & Qdrant<br/>🛠️ Project 7: Meal Assistant]
+        S9 --> S10[Sec 10: Multi-Agent LangGraph4j<br/>🛠️ Project 8: Research Agent]
+    end
+
+    subgraph Phase 3: Production, Security & Scale
+        S10 --> S11[Sec 11: OpenTelemetry & Zipkin<br/>🛠️ Project 9: Telemetry Suite]
+        S11 --> S12[Sec 12: Guardrails & Evals]
+        S12 --> S13[Sec 13: Cloud & LLMOps<br/>🛠️ Project 10: Cloud Deployment]
+    end
+```
+
 ---
-📚 3. The 13-Section Free Curriculum (Latest 2025–2026 Videos)
-🔹 PHASE 1: Foundations, Pure Java LLMs & Output Contracts
-Section 01: Java 21+ & Spring Boot 4 Readiness
-What to Master: Java `record`, Sealed Interfaces, Pattern Matching, Lambdas & Streams, `CompletableFuture` async calls, REST APIs, Paging & Sorting.
-📺 Latest Free Videos:
-Spring Boot 4 Crash Course (Sept 2026 — 12 Mins) — Dan Vega (Fastest way to see what's new in Spring Boot 4)
-Inside Spring Boot 4: Restructuring for the Future (June 2026) — Spring I/O Conference
-Spring Boot 4 Full Course: Build 4 Projects (May 2026 — 11 Hrs) — Java Guides (Ramesh Fadatare) (Use only as a reference for REST/Paging)
-Section 02: AI & LLM Fundamentals
-What to Master: Transformer attention basics, Context Windows, Tokenization pricing, Temperature vs. `top\\\_p` vs. `top\\\_k`, Embeddings ($\cos(\theta)$ similarity), and why LLMs hallucinate.
-📺 Latest Free Videos:
-The Future of Java is AI Engineering — Full Syllabus & Concepts (2026) — Learn Code With Durgesh
-Bootiful Spring AI @ Spring I/O (May 2026 — 42 Mins) — Josh Long & James Ward
-Section 03: Calling LLMs with Pure Java (No Framework)
-What to Master: Why frameworks exist by building without one first. Use standard `java.net.http.HttpClient`, `HttpRequest`, Jackson `ObjectMapper`, and async calls to hit the Google Gemini / OpenAI REST API directly.
-📺 Latest Free Videos:
-OpenAI / LLM Model Call Using Pure Java HttpClient (Oct 2025 — 14 Mins) — Telusko (Navin Reddy)
-Connect Java to Google Gemini API for Free in 10 Lines (Oct 2026 — 10 Mins) — MFA Creatives
-🛠️ Project 1 Deliverable — `Pure Java Terminal Study Bot`:
-Build a command-line Java 21 app using `HttpClient` + Google Gemini Free Tier API that accepts a study topic, maintains a `List<String>` conversation history in memory, and streams/prints formatted study flashcards in the terminal.
-Section 04: Prompt Engineering & Structured Output Contracts
-What to Master: System vs. User prompt templates, Few-Shot examples, Chain-of-Thought, and `BeanOutputConverter` (forcing the LLM to return strict JSON mapped directly to a Java `record`).
-📺 Latest Free Videos:
-AI for Java Developers: Full Workshop on Spring AI (June 2025 — 5.5 Hrs) — Dan Vega (Watch the Structured Outputs & Prompts chapters)
-Spring AI Full Course (15+ Hours) — Learn Code With Durgesh (Jump directly to `BeanOutputConverter`, `MapOutputConverter`, and `ListOutputConverter`)
+
+## ⚡ The Anti-Boredom Daily 3-Hour Protocol
+
+> [!TIP]
+> **How to Beat Playlist Boredom ("The Break-It-First Rule"):** Never watch 15-hour coding videos passively. Before clicking play on any tutorial below, read the project goal and spend **15 minutes trying to build it in IntelliJ IDEA** until you hit an error. Then scrub the video *only* to the timestamp that solves your block.
+
+$$\text{Daily 3-Hour Sprint} = 45\text{m Concept Scimming (}1.75\times\text{)} + 105\text{m Project Building} + 30\text{m Core Java/SQL}$$
+
+| Time Block | Activity | Concrete Output |
+| :--- | :--- | :--- |
+| **⏱️ 00:00 – 00:45** | **Targeted Video Skim ($1.5\times - 2\times$)** | Jump directly to the new annotations/classes (`ChatClient`, `@Tool`, `VectorStore`). Skip boilerplate setup. |
+| **💻 00:45 – 02:30** | **Hands-On Project Coding** | Build the section's assigned project in your IDE. Push at least **1 green commit** to GitHub daily. |
+| **🧠 02:30 – 03:00** | **Core Backend & SQL Prep** | Revise 1 Core Java/Spring Boot interview topic (`Streams`, `Multithreading`, `@Transactional`) + 2 SQL `JOIN` queries. |
+
 ---
-🔹 PHASE 2: Spring AI Deep Dive & Enterprise RAG
-Section 05: Spring AI Deep Dive, Advisors & Chat Memory
-What to Master: `ChatClient` fluent API, Streaming responses (`Flux<String>`), Spring AI Advisors (interceptors for prompts), `MessageChatMemoryAdvisor`, and persisting chat history in PostgreSQL/MySQL.
-📺 Latest Free Videos:
-Spring AI Advisors Explained: Logging, Memory & Custom Advisors (Aug 2026 — 24 Mins) — Sudarshan Shah
-Spring AI Tutorials Complete Playlist — Learn Code With Durgesh
-🛠️ Project 2 Deliverable — `AI Learning Assistant (Microservice + UI)`:
-A Spring Boot backend with persistent JDBC/JPA Chat Memory that acts as a personalized coding tutor, generating structured quizzes (`record QuizQuestion(...)`) and tracking user weak spots across sessions.
-Section 06: Embeddings, Semantic Search & Enterprise RAG
-What to Master: ETL Document Ingestion (`PagePdfDocumentReader`, `TikaDocumentReader`), Token Chunking, Vector Stores (`PGVector` in Docker), Metadata Filtering, Query Rewriting, Hybrid Search (Dense Vector + Keyword), and Re-ranking.
-📺 Latest Free Videos:
-Integrating AI into Java Apps: Spring AI Deep Dive with RAG @ Devoxx (April 2026 — 1 Hr 39 Mins) — Christian Tzolov (Co-lead of Spring AI)
-Advance RAG Flow: Hybrid Search, Re-ranking & Query Rewriting — Learn Code With Durgesh
-Build a Complete AI RAG Application with Java in 10 Hours — Learn Code With Durgesh
-DocMind – Multi-User Secure RAG Project Playlist (JWT + Spring Security) — Learn Code With Durgesh
-🛠️ Project 3 Deliverable — `AI E-Commerce Product Discovery Assistant`:
-Semantic search engine over a product catalog in PGVector using metadata filters (`price < 5000`, `category == 'electronics'`) so users can search "lightweight laptop for college coding under 50k" and get exact product matches.
-🛠️ Project 4 Deliverable — `"Saathi" Know-Your-Company Enterprise Bot`:
-Multi-tenant RAG bot secured with Spring Security + JWT that ingests HR/Leave PDF policies and answers employee questions with exact page citations.
+
+## 🛠️ Zero-Cost API & Local Setup Stack
+
+You do not need to pay for OpenAI credits to complete this entire roadmap. Use this free stack:
+
+* 🟢 **Google AI Studio (Free Gemini 2.5 Flash / Pro API Tier):** [Get Free API Key](https://aistudio.google.com/)
+* ⚡ **Groq Cloud (Free Ultra-Fast Llama 3.3 / Mixtral API):** [Get Free API Key](https://console.groq.com/)
+* 🦙 **Ollama (Run LLMs & Embedding Models 100% Locally):** [Download Ollama](https://ollama.com/)
+* 🐳 **Docker Desktop (Run PGVector, Qdrant, Redis & Zipkin):** [Download Docker](https://www.docker.com/products/docker-desktop/)
+
 ---
-🔹 PHASE 3: Tool Calling, MCP (Model Context Protocol) & Agentic AI
-Section 07: Tool Calling & Safe Backend Actions
-What to Master: Giving LLMs "hands" using `@Tool` annotations to query SQL databases, trigger emails, or call external REST APIs safely with permission checks.
-📺 Latest Free Videos:
-Build a Coding Agent Like Claude Code with Spring AI (March 2026 — 27 Mins) — Dan Vega (Masterclass in `@Tool` calling and file/system actions)
-Spring AI Tool Calling Chapters (15-Hour Course) — Learn Code With Durgesh
-🛠️ Project 5 Deliverable — `Autonomous Customer Support \\\& Order Agent`:
-An AI support agent connected to a PostgreSQL order database via `@Tool` methods (`checkOrderStatus`, `cancelOrder`, `issueRefund`) that validates user ownership before mutating database records.
-Section 08: Complete MCP (Model Context Protocol) with Security
-What to Master: Anthropic's Model Context Protocol (MCP)—the industry standard in 2026 for connecting AI clients (Claude Desktop, Cursor, Spring AI Clients) to backend servers, plus securing MCP with Spring Security / OAuth2 / Keycloak.
-📺 Latest Free Videos:
-Every App Should Have an MCP Server: How to in Spring AI (Nov 2026 — 17 Mins) — Dan Vega (Uploaded last week!)
-Build an MCP Server & Client with Spring AI & Java | Complete Tutorial (July 2026 — 22 Mins) — Programming Tutorials
-Spring AI + MCP: Building the Bridge Between Java Apps and AI Agents (June 2026 — 57 Mins) — Siva Prasad Reddy (JavaGuides / SivaLabs)
-🛠️ Project 6 Deliverable — `AI Travel Planner MCP Server`:
-Build a custom Spring Boot MCP Server exposing flight/hotel/weather tools, secured with OAuth2/JWT, and connect it to an MCP Client + React frontend.
-Section 09: Master AI Using LangChain4j & Qdrant Vector DB
-What to Master: Why companies use LangChain4j alongside Spring AI: declarative `@AiService` interfaces, `@SystemMessage`, `@UserMessage`, ChatMemoryStore, and running Qdrant Vector Database in Docker.
-📺 Latest Free Videos:
-LangChain4j Masterclass: Build an AI Smart Bot with Java (2+ Hours) — Learn Code With Durgesh
-RAG Fundamentals: Hands-on with Spring AI & LangChain4j (Feb 2026 — 23 Mins) — Ken Kousen (Tales from the jar side)
-🛠️ Project 7 Deliverable — `AI Meal \\\& Pantry Assistant (LangChain4j + Qdrant)`:
-Users input available fridge ingredients; LangChain4j searches recipe embeddings in Qdrant, checks nutritional macros via a tool, and generates a structured weekly meal plan.
-Section 10: Single-Agent & Multi-Agent Workflows (LangGraph4j)
-What to Master: Moving from simple tool calls to stateful cyclic graphs (LangGraph4j): Nodes, Conditional Edges, Central State Management, Checkpointing, Human-in-the-Loop (HITL) approval gates, and Supervisor-Worker multi-agent orchestration.
-📺 Latest Free Videos:
-Build Complex AI Agents in Java Like a Pro with LangGraph4j — Learn Code With Durgesh
-Building AI Agents with Spring & MCP @ Devoxx (April 2026 — 44 Mins) — Josh Long & James Ward
-Practical Agentic RAG with Spring AI in Enterprise Apps — Dan Dobrin @ Spring I/O
-🛠️ Project 8 Deliverable — `Autonomous Multi-Agent AI Research Assistant`:
-A 3-agent system (`Planner Agent` $\rightarrow$ `Web/RAG Scraper Agent` $\rightarrow$ `Writer/Critic Agent`) built with LangGraph4j that researches a technical topic, verifies citations, pauses for human approval, and exports a clean Markdown report.
+
+## 📚 The 13-Section & 10-Project Master Syllabus (With Free Links)
+
+*Reference Syllabus Video:* [**The Future of Java is AI Engineering (13 Sections & 10 Projects)**](http://www.youtube.com/watch?v=Gm4af4V-PXg) & [**Complete AI Engineering 3-Phase Overview**](http://www.youtube.com/watch?v=3RCqmx55c3o) — *Learn Code With Durgesh*
+
 ---
-🔹 PHASE 4: Observability, Guardrails, Evals & Cloud Production
-Section 11: AI Observability, Distributed Tracing & Metrics
-What to Master: Monitoring LLM latency, token usage (prompt vs. completion tokens), tool-call duration, and error rates using Spring Boot Actuator, Micrometer, OpenTelemetry, and Zipkin/Grafana.
-📺 Latest Free Videos:
-Spring Boot 4 OpenTelemetry: From Zero to Full Observability in Minutes (Dec 2025 — 22 Mins) — Dan Vega
-Distributed Tracing in Microservices: Spring Boot + OpenTelemetry + Zipkin (Sept 2026 — 17 Mins) — CodeSnippet by Chetan
-🛠️ Project 9 Deliverable — `AI Telemetry \\\& Observability Suite`:
-Wire OpenTelemetry + Zipkin + Prometheus into your Multi-Agent/RAG app so you can show recruiters a live dashboard tracking token cost and trace waterfalls per LLM request.
-Section 12: Guardrails, AI Security & Evaluation Engineering
-What to Master: Building custom Spring AI Guardrail Advisors to block Prompt Injections, redact PII (emails, Aadhaar/PAN, phone numbers) before sending to external LLMs, and writing LLM-as-a-Judge / RAGAS evaluation tests in JUnit 5.
-📺 Latest Free Videos:
-Build Real Guardrails for Your Spring AI App (July 2026 — 24 Mins) — Dan Vega
-Mastering LLM Chatbots and RAG Evaluation Crash Course — Krish Naik
-RAG Evaluation: Precision, Recall, Faithfulness, RAGAS Explained — Logical Lenses
-Section 13: Production Engineering, Model Routing, Caching & Cloud Deployment
-What to Master: Type-Safe Model Routing (routing cheap queries to local Llama/Gemini Flash and hard queries to Claude/GPT-4o), Redis Semantic Caching, Rate Limiting, and containerizing the full stack with `docker-compose.yml` for Cloud deployment.
-📺 Latest Free Videos:
-Spring AI TypeSafe Is Here: Build a Model Router From Scratch (Sept 2026 — 27 Mins) — Dan Vega
-Spring AI to AI-Native Java Architectures (Feb 2026 — 1 Hr 55 Mins) — Josh Long & Pratik Patel
-🛠️ Project 10 Deliverable — `Cloud-Deployed Enterprise AI Platform`:
-Package your flagship project (Project 4 + Project 8 + Guardrails + Model Router + OpenTelemetry) into a multi-container Docker setup (`Spring Boot + PGVector + Redis + Zipkin`) and record a 2-minute Loom architecture & live demo video.
+
+### 🔹 Phase 1: Foundations, Pure Java LLMs & Spring AI Core (Sections 1–5)
+
+| Sec | Module & Core Concepts | 🛠️ Mandatory Project | 🎥 Best Free YouTube Courses & Top Instructors |
+| :---: | :--- | :--- | :--- |
+| **01** | **Java 21 & Spring Boot 4 Readiness**<br/>`Records`, `Sealed Interfaces`, `Streams`, `HttpClient`, `CompletableFuture`, Paging & Sorting | **Mini Project:** REST API with Pagination & Async Calls | • [Java 21 & Spring Boot Full Course](http://www.youtube.com/playlist?list=PLsyeobzWxl7qJSZcMaN18c5l-k2n1FWHx) — *Telusko*<br/>• [Spring Boot 4 & Modern Java Features](https://www.youtube.com/@danvega) — *Dan Vega* |
+| **02** | **AI & LLM Fundamentals**<br/>Transformers, Tokens, Context Windows, Pricing, Temperature, `Top-P`, `Top-K`, Hallucinations | *Architecture & Token Math Notes* | • [Spring AI Full Course (First 2 Hours: LLM Theory)](http://www.youtube.com/watch?v=KN58GwRRu28) — *Learn Code With Durgesh* |
+| **03** | **LLM with Pure Java (No Framework)**<br/>Calling Gemini/OpenAI via raw `java.net.http.HttpClient`, Jackson JSON parsing, Async requests | **🛠️ Project 1: Terminal Study Bot**<br/>Pure Java CLI assistant without any Spring dependencies | • [Calling Gemini API in Java (No Frameworks)](https://www.youtube.com/results?search_query=dan+vega+java+httpclient+gemini+api) — *Dan Vega*<br/>• [Spring AI Playlist (Raw API vs Framework)](http://www.youtube.com/playlist?list=PL0zysOflRCen1TeDUm-ebl9T-WbJygCGE) — *Durgesh* |
+| **04** | **Prompt Engineering & Output Contracts**<br/>System roles, Few-shot, Chain-of-Thought, `BeanOutputConverter` to strict Java `record` schemas | *Structured JSON Extraction Endpoints* | • [Spring AI Structured Outputs & Prompts](http://www.youtube.com/watch?v=KN58GwRRu28) — *Learn Code With Durgesh*<br/>• [Structured Outputs in Spring AI](https://www.youtube.com/results?search_query=dan+vega+spring+ai+structured+output) — *Dan Vega* |
+| **05** | **Spring AI Deep Dive & Chat Memory**<br/>`ChatClient`, Advisors API, Streaming (`Flux`), `MessageChatMemoryAdvisor`, Persistent JDBC Memory | **🛠️ Project 2: AI Learning Assistant**<br/>Full-stack microservice with persistent multi-turn chat memory | • [Spring AI 15-Hour Masterclass (Hours 2–7)](http://www.youtube.com/watch?v=KN58GwRRu28) — *Learn Code With Durgesh*<br/>• [Spring AI Chat Memory Deep Dive](https://www.youtube.com/results?search_query=dan+vega+spring+ai+chat+memory) — *Dan Vega* |
+
+<details>
+<summary><b>☑️ Click to expand Phase 1 Progress Checklist (Sections 1–5)</b></summary>
+
+- [x] Set up Java 21+, Spring Boot, Docker, and Gemini/Ollama keys
+- [x] Implement Spring AI `ChatClient`, Prompt Templates, and Streaming (`Flux<String>`)
+- [ ] **Build Project 1:** Pure Java `HttpClient` Study Bot in terminal
+- [ ] Master `BeanOutputConverter` to map LLM outputs directly into Java `record` classes
+- [ ] **Build Project 2:** AI Learning Assistant with persistent `JdbcChatMemory`
+
+</details>
+
 ---
-🗓️ 4. The 10-Week Fast-Track Sprint Schedule (Nov 2026 – Jan 2027)
-Week	Target Dates	Sections Covered	Primary Deliverable
-Week 1	Nov 11 – Nov 18	Sec 01 – 03	Finish Project 1 (Pure Java `HttpClient` Gemini Study Bot)
-Week 2	Nov 19 – Nov 25	Sec 04 – 05	Finish Project 2 (Spring AI Learning Assistant + Persistent Memory)
-Week 3	Nov 26 – Dec 02	Sec 06 (Part 1)	Finish Project 3 (E-Commerce Semantic Search with PGVector)
-Week 4	Dec 03 – Dec 09	Sec 06 (Part 2)	Finish Project 4 ("Saathi" Enterprise RAG Bot + JWT Security)
-Week 5	Dec 10 – Dec 16	Sec 07 – 08	Finish Project 5 & 6 (Tool Calling Support Bot + Spring AI MCP Server)
-Week 6	Dec 17 – Dec 23	Sec 09	Finish Project 7 (LangChain4j + Qdrant Meal Assistant)
-Week 7	Dec 24 – Dec 30	Sec 10	Finish Project 8 (LangGraph4j Multi-Agent Researcher) + START APPLYING!
-Week 8	Dec 31 – Jan 06	Sec 11 – 12	Add Project 9 (OpenTelemetry/Zipkin) + Input Guardrails & JUnit Evals
-Week 9	Jan 07 – Jan 13	Sec 13	Add Model Router + Docker Compose (Project 10) + Record 2-Min Demo Videos
-Week 10+	Jan 14 – May 2027	Job Hunt Mode	20+ Targeted Applications/Week + Cold DMs + Core Java/SQL/DSA Revision
+
+### 🔸 Phase 2: Enterprise RAG, Tool Calling, MCP & Multi-Agent Workflows (Sections 6–10)
+
+> [!NOTE]
+> **Why Phase 2 Gets You Hired:** 90% of beginners stop after Phase 1. Building **Hybrid Search RAG**, **OAuth2-secured MCP Servers**, and **Stateful LangGraph4j Agents** immediately places your resume in the top 5% of applicants.
+
+| Sec | Module & Core Concepts | 🛠️ Mandatory Project | 🎥 Best Free YouTube Courses & Top Instructors |
+| :---: | :--- | :--- | :--- |
+| **06** | **Embeddings, Semantic Search & Enterprise RAG**<br/>Document Readers, Chunking, `PGVector`, Metadata Filtering, Query Rewriting, Hybrid Search, Re-ranking | **🛠️ Project 3: E-Commerce Product Discovery**<br/>**🛠️ Project 4: "Saathi" Enterprise KYC Policy Bot** | • [Build a Complete AI RAG App in 10 Hours](http://www.youtube.com/watch?v=2Eib-A2Qppw) — *Durgesh*<br/>• [DocMind: 22-Video Multi-User RAG + JWT Series](http://www.youtube.com/playlist?list=PLI2BV-IiGKTk) — *Durgesh*<br/>• [Advanced RAG Flow](http://www.youtube.com/watch?v=usA-iqA-1yU) & [RAG Basics](http://www.youtube.com/watch?v=JROoPfgTxlg) |
+| **07** | **Tool Calling & Safe Actions**<br/>`@Tool` annotations, connecting LLMs to SQL/REST APIs, parameter validation, safe execution boundaries | **🛠️ Project 5: Automated Customer Support Agent**<br/>Executes DB lookups, ticket updates & refunds safely | • [Spring AI Tool Calling (15-Hr Course Module)](http://www.youtube.com/watch?v=KN58GwRRu28) — *Durgesh*<br/>• [Function & Tool Calling in Spring AI](https://www.youtube.com/results?search_query=dan+vega+spring+ai+tool+calling) — *Dan Vega* |
+| **08** | **Complete MCP (Model Context Protocol)**<br/>MCP Architecture, Building Custom Java MCP Servers/Clients, Securing MCP with **Keycloak, OAuth2 & Spring Security** | **🛠️ Project 6: AI Travel Planner**<br/>Custom MCP Server + Keycloak OAuth2 + React UI | • [Building MCP Servers with Spring AI](https://www.youtube.com/results?search_query=dan+vega+spring+ai+mcp) — *Dan Vega & Josh Long*<br/>• [Model Context Protocol (MCP) in Java](https://www.youtube.com/results?search_query=spring+ai+mcp+server+oauth2) — *Spring Developer* |
+| **09** | **Master AI Using LangChain4j**<br/>`AiServices`, Declarative Interfaces, Chat Memory, Tools, and **Qdrant Vector DB** integration | **🛠️ Project 7: AI Meal & Pantry Assistant**<br/>Built with LangChain4j + Qdrant Vector DB | • [LangChain4j Masterclass (2+ Hours)](http://www.youtube.com/watch?v=M1VkZN22rBg) — *Learn Code With Durgesh*<br/>• [LangChain4j Tutorials](https://www.youtube.com/results?search_query=langchain4j+full+course+java) — *Tales from the Jar Side / Lize Raes* |
+| **10** | **Single-Agent & Multi-Agent Workflows**<br/>Autonomous ReAct loops, **LangGraph4j** State Graphs, Nodes/Edges, Checkpointing, Human-in-the-Loop (HITL) | **🛠️ Project 8: Autonomous AI Research Agent**<br/>Multi-agent pipeline that researches, critiques & compiles reports | • [Build Complex AI Agents with LangGraph4j](http://www.youtube.com/watch?v=CFx5IE3RezU) — *Learn Code With Durgesh*<br/>• [Agentic Workflows in Java](https://www.youtube.com/results?search_query=spring+ai+agentic+patterns+christian+tzolov) — *Christian Tzolov* |
+
+<details>
+<summary><b>☑️ Click to expand Phase 2 Progress Checklist (Sections 6–10)</b></summary>
+
+- [ ] Run PostgreSQL (`pgvector`) and `Qdrant` containers via Docker Compose
+- [ ] **Build Project 3 & 4:** Semantic Product Search + Multi-user "Saathi" RAG Bot with JWT Security
+- [ ] **Build Project 5:** Customer Support Agent using `@Tool` database actions
+- [ ] **Build Project 6:** Spring AI MCP Server secured with Spring Security / OAuth2
+- [ ] **Build Project 7:** AI Meal & Pantry Assistant using `LangChain4j` + `Qdrant`
+- [ ] **Build Project 8:** Stateful Multi-Agent Research Assistant with `LangGraph4j`
+
+</details>
+
 ---
-🔑 5. Zero-Cost API & Local Setup Kit (Don't Pay for OpenAI Credits)
-Google Gemini Free API Tier: Grab an API key from Google AI Studio — works out-of-the-box with both Pure Java `HttpClient` and Spring AI.
-Groq Cloud (Free Fast Inference): Grab a free API key at Groq Console — uses OpenAI-compatible endpoints so you can drop it into `spring.ai.openai.base-url=https://api.groq.com/openai` for blazing-fast Llama 3.3 / Mixtral inference.
-Ollama (100% Offline & Local): Install from ollama.com and run `ollama run llama3.2` or `ollama pull nomic-embed-text` for free local embeddings in Projects 3, 4, and 7.
+
+### 🔺 Phase 3: Observability, Guardrails, Evals & Cloud Production (Sections 11–13)
+
+| Sec | Module & Core Concepts | 🛠️ Mandatory Project | 🎥 Best Free YouTube Courses & Top Instructors |
+| :---: | :--- | :--- | :--- |
+| **11** | **Observability, Distributed Tracing & Metrics**<br/>Spring Boot Actuator, **Micrometer**, **OpenTelemetry**, **Zipkin**, Prometheus & Grafana for token/latency tracking | **🛠️ Project 9: AI Telemetry & Observability Suite**<br/>Live dashboard tracking token cost, latency & tool traces | • [Spring AI Observability, Micrometer & Zipkin](https://www.youtube.com/results?search_query=dan+vega+spring+boot+opentelemetry+observability) — *Dan Vega / Thomas Vitale* |
+| **12** | **Guardrails, AI Security & Evaluation Engineering**<br/>Input/Output Advisors, Prompt Injection Defense, PII Masking, OWASP Top 10, **LLM-as-a-Judge** & RAGAS Evals | *Automated JUnit 5 Eval Suite + Security Guardrail Advisors* | • [RAG & Chatbot Evaluation Crash Course](http://www.youtube.com/watch?v=NebOSOTp-zA) — *Krish Naik*<br/>• [RAGAS Metrics Explained Clearly](http://www.youtube.com/watch?v=7_LTU0LA374) — *Logical Lenses*<br/>• [Spring AI Guardrails & Advisors](https://www.youtube.com/results?search_query=spring+ai+advisors+guardrails) — *Dan Vega* |
+| **13** | **Production Engineering, Resilience & Cloud Deployment**<br/>Redis Semantic Caching, Model Routing, Rate Limiting (`Resilience4j`), Multi- stage Dockerfiles, Cloud CI/CD | **🛠️ Project 10: Cloud Production Deployment**<br/>Containerized, cached & resilient enterprise AI backend | • [Production Spring AI & Model Routing](https://www.youtube.com/results?search_query=spring+ai+production+josh+long) — *Josh Long (Spring Developer)* |
+
+<details>
+<summary><b>☑️ Click to expand Phase 3 Progress Checklist (Sections 11–13)</b></summary>
+
+- [ ] **Build Project 9:** Wire up OpenTelemetry + Micrometer + Zipkin to trace LLM token consumption
+- [ ] Implement custom Spring AI `CallAroundAdvisor` for Input Guardrails (Prompt Injection + PII masking)
+- [ ] Write JUnit 5 `LLM-as-a-Judge` tests verifying Faithfulness and Answer Relevance
+- [ ] Add Redis Caching + Resilience4j rate limiting
+- [ ] **Build Project 10:** Package flagship project with `docker-compose.yml` and record a 2-minute Loom demo
+
+</details>
+
+---
+
+## 🗓️ 10-Week Fast-Track Sprint Schedule
+
+> [!TIP]
+> **Do Not Wait to Finish All 10 Projects Before Applying!** You do not need 10 small projects on your resume—you need **2–3 Flagship Production Systems** (combining Projects 4, 5, 6, 8, and 9) and you should start applying in **Week 7**.
+
+| Sprint Weeks | Sections Covered | Primary Deliverable | Career Action Item |
+| :--- | :--- | :--- | :--- |
+| **Weeks 1–2** | **Sections 1 – 5** | Complete **Project 1 (Pure Java Bot)** & **Project 2 (Spring AI Learning Assistant)** | Push daily commits; set up clean GitHub profile README. |
+| **Weeks 3–4** | **Section 6** | Complete **Project 3 (Semantic Search)** & **Project 4 (Enterprise KYC RAG Bot with JWT)** | Post a 45-second LinkedIn demo of your RAG bot citing PDF pages. |
+| **Weeks 5–6** | **Sections 7 – 8** | Complete **Project 5 (Support Tool Agent)** & **Project 6 (OAuth2 MCP Server)** | Combine RAG + Tools + MCP into your first flagship repo. |
+| **Weeks 7–8** | **Sections 9 – 10** | Complete **Project 7 (LangChain4j + Qdrant)** & **Project 8 (LangGraph4j Multi-Agent)** | 🚨 **START APPLYING!** Send 15–20 internship/fresher applications per week. |
+| **Weeks 9–10** | **Sections 11 – 13** | Complete **Project 9 (OpenTelemetry/Zipkin)**, Guardrails, Evals & **Project 10 (Docker Cloud Deploy)** | Record 2-minute Loom demo videos and cold-DM startup founders/EMs. |
+
+---
+
+## 📄 ATS-Ready Resume Bullet Templates
+
+Copy and customize these high-impact bullet points once your flagship projects are on GitHub:
+
+### 🏆 Flagship Project A: Saathi AI – Multi-Tenant Enterprise RAG & MCP Knowledge Platform
+* **Tech Stack:** `Java 21`, `Spring Boot 3.4`, `Spring AI`, `Spring Security (OAuth2/JWT)`, `PostgreSQL (PGVector)`, `Docker`
+* Engineered a multi-tenant Enterprise RAG system using **Spring AI** and **PGVector**, enforcing department-level document isolation via metadata filtering and JWT authentication.
+* Implemented **Query Rewriting** and **Hybrid Search** over chunked company policies, reducing ungrounded LLM hallucinations and guaranteeing 100% source-cited answers.
+* Exposed internal enterprise tools via a standardized **Model Context Protocol (MCP) Server** secured with **OAuth2**, enabling safe autonomous actions across microservice boundaries.
+
+### 🏆 Flagship Project B: AutoResolve – Stateful Multi-Agent System with Guardrails & OpenTelemetry
+* **Tech Stack:** `Java 21`, `Spring Boot`, `LangChain4j`, `LangGraph4j`, `Qdrant`, `Redis`, `OpenTelemetry`, `Zipkin`, `JUnit 5`
+* Architected a stateful multi-agent workflow using **LangGraph4j** and **LangChain4j** that autonomously triages support tickets, queries a **Qdrant** vector store, and triggers database tools with **Human-in-the-Loop (HITL)** approval gates.
+* Built custom **Input/Output Guardrail Advisors** to redact sensitive PII and block prompt injection attempts prior to model inference.
+* Integrated an automated **LLM-as-a-Judge** evaluation suite in **JUnit 5** alongside **OpenTelemetry, Micrometer, and Zipkin** distributed tracing to monitor token consumption, latency, and cost.

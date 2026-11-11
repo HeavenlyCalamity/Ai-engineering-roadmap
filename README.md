@@ -28,25 +28,25 @@ GitHub natively renders the Mermaid diagram below to visualize how all 13 sectio
 
 ```mermaid
 graph LR
-    subgraph Phase 1: Foundations & Core AI
-        S1[Sec 1: Java 21 & Spring Boot 4] --> S2[Sec 2: LLM Internals]
-        S2 --> S3[Sec 3: Pure Java HttpClient<br/>🛠️ Project 1: Study Bot]
-        S3 --> S4[Sec 4: Prompts & Contracts]
-        S4 --> S5[Sec 5: Spring AI & Memory<br/>🛠️ Project 2: Learning Assistant]
+    subgraph P1["Phase 1: Foundations & Core AI"]
+        S1["Sec 1: Java 21 & Spring Boot 4"] --> S2["Sec 2: LLM Internals"]
+        S2 --> S3["Sec 3: Pure Java HttpClient<br/>🛠️ Project 1: Study Bot"]
+        S3 --> S4["Sec 4: Prompts & Contracts"]
+        S4 --> S5["Sec 5: Spring AI & Memory<br/>🛠️ Project 2: Learning Assistant"]
     end
 
-    subgraph Phase 2: RAG, Tools, MCP & Agents
-        S5 --> S6[Sec 6: Enterprise RAG & PGVector<br/>🛠️ Projects 3 & 4: Search & KYC Bot]
-        S6 --> S7[Sec 7: Safe Tool Calling<br/>🛠️ Project 5: Support Agent]
-        S7 --> S8[Sec 8: MCP + OAuth2 Security<br/>🛠️ Project 6: AI Travel Planner]
-        S8 --> S9[Sec 9: LangChain4j & Qdrant<br/>🛠️ Project 7: Meal Assistant]
-        S9 --> S10[Sec 10: Multi-Agent LangGraph4j<br/>🛠️ Project 8: Research Agent]
+    subgraph P2["Phase 2: RAG, Tools, MCP & Agents"]
+        S5 --> S6["Sec 6: Enterprise RAG & PGVector<br/>🛠️ Projects 3 & 4: Search & KYC Bot"]
+        S6 --> S7["Sec 7: Safe Tool Calling<br/>🛠️ Project 5: Support Agent"]
+        S7 --> S8["Sec 8: MCP + OAuth2 Security<br/>🛠️ Project 6: AI Travel Planner"]
+        S8 --> S9["Sec 9: LangChain4j & Qdrant<br/>🛠️ Project 7: Meal Assistant"]
+        S9 --> S10["Sec 10: Multi-Agent LangGraph4j<br/>🛠️ Project 8: Research Agent"]
     end
 
-    subgraph Phase 3: Production, Security & Scale
-        S10 --> S11[Sec 11: OpenTelemetry & Zipkin<br/>🛠️ Project 9: Telemetry Suite]
-        S11 --> S12[Sec 12: Guardrails & Evals]
-        S12 --> S13[Sec 13: Cloud & LLMOps<br/>🛠️ Project 10: Cloud Deployment]
+    subgraph P3["Phase 3: Production, Security & Scale"]
+        S10 --> S11["Sec 11: OpenTelemetry & Zipkin<br/>🛠️ Project 9: Telemetry Suite"]
+        S11 --> S12["Sec 12: Guardrails & Evals"]
+        S12 --> S13["Sec 13: Cloud & LLMOps<br/>🛠️ Project 10: Cloud Deployment"]
     end
 ```
 
@@ -57,7 +57,7 @@ graph LR
 > [!TIP]
 > **How to Beat Playlist Boredom ("The Break-It-First Rule"):** Never watch 15-hour coding videos passively. Before clicking play on any tutorial below, read the project goal and spend **15 minutes trying to build it in IntelliJ IDEA** until you hit an error. Then scrub the video *only* to the timestamp that solves your block.
 
-$$\text{Daily 3-Hour Sprint} = 45\text{m Concept Scimming (}1.75\times\text{)} + 105\text{m Project Building} + 30\text{m Core Java/SQL}$$
+$$\text{Daily 3-Hour Sprint} = 45\text{m Concept Skimming (}1.75\times\text{)} + 105\text{m Project Building} + 30\text{m Core Java/SQL}$$
 
 | Time Block | Activity | Concrete Output |
 | :--- | :--- | :--- |
